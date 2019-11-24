@@ -37,5 +37,5 @@ npx ncc build dist/index.js -o lib
 ## Local Testing
 
 ```
-INPUT_REPO_TOKEN='your token here' GITHUB_REPOSITORY='org/repo' INPUT_VERSION=v1.0.0 INPUT_UPLOAD_URL=[upload_url] INPUT_FILENAME=[filename] node lib/index.js
+INPUT_REPO_TOKEN='your token here' GITHUB_REPOSITORY='org/repo' INPUT_FILENAME=[filename] INPUT_UPLOAD_URL=[upload_url] INPUT_FILENAME=[filename] node lib/index.js
 ```
