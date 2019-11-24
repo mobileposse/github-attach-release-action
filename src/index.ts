@@ -2,6 +2,7 @@ import * as core from '@actions/core'
 import * as github from '@actions/github'
 const mime = require('mime-types')
 const fs = require('fs')
+const path = require('path')
 
 async function run() {
   try {
@@ -26,7 +27,7 @@ const attachAsset = async (client: github.GitHub, url: string, filename: string)
       'content-type': mime.lookup(filename),
       'content-length': contentLength
     },
-    name: filename
+    name: path.basename(filename)
   })
 }
 
