@@ -1,0 +1,13 @@
+name: 'Github Attach Release Action'
+description: 'Attaches a file to an existing Github release'
+author: 'MobilePossse'
+inputs:
+  repo_token:
+    description: 'The GITHUB_TOKEN secret'
+  filename:
+    description: 'Name of the file to attach to the release'
+  upload_url:
+    description: 'URL to use for uploading the file (https://uploads.github.com/repos/[org]/[project]/releases/[release id]/assets{?name,label}')
+runs:
+  using: 'node12'
+  main: 'lib/index.js'
