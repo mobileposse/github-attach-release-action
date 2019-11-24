@@ -7,7 +7,7 @@ inputs:
   filename:
     description: 'Name of the file to attach to the release'
   upload_url:
-    description: 'URL to use for uploading the file (https://uploads.github.com/repos/[org]/[project]/releases/[release id]/assets{?name,label}')
+    description: 'URL to use for uploading the file (https://uploads.github.com/repos/[org]/[project]/releases/[release id]/assets{?name,label})'
 runs:
   using: 'node12'
   main: 'lib/index.js'
