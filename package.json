@@ -1,6 +1,6 @@
 {
   "name": "github-attach-release-action",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "private": true,
   "description": "Attaches a file to an existing Github release",
   "main": "lib/index.js",
@@ -16,19 +16,19 @@
   "author": "Sean Schofield",
   "license": "MIT",
   "dependencies": {
-    "@actions/core": "^1.1.1",
-    "@actions/github": "^1.1.0",
-    "mime-types": "^2.1.24",
-    "semver": "^6.3.0"
+    "@actions/core": "^1.6.0",
+    "@actions/github": "^5.0.0",
+    "mime-types": "^2.1.32",
+    "semver": "^7.3.5"
   },
   "devDependencies": {
-    "@semantic-release/github": "^5.5.0",
-    "@types/node": "^12.7.8",
-    "@types/semver": "^6.0.2",
-    "@zeit/ncc": "^0.20.5",
+    "@semantic-release/github": "^8.0.1",
+    "@types/node": "^16.10.2",
+    "@types/semver": "^7.3.8",
+    "@zeit/ncc": "^0.22.3",
     "tslint": "^5.20.0",
     "tslint-config-prettier": "^1.18.0",
-    "typescript": "^3.6.3"
+    "typescript": "^4.4.3"
   },
   "prettier": {
     "semi": false,
