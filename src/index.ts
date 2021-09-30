@@ -9,7 +9,7 @@ async function run() {
     const token = core.getInput('repo_token', { required: true })
     const filename = core.getInput('filename', { required: true })
     const uploadUrl = core.getInput('upload_url', { required: true })
-    const client = new github.GitHub(token)
+    const client = github.getOctokit(token)
 
     await attachAsset(client, uploadUrl, filename)
   } catch (error) {
@@ -18,7 +18,7 @@ async function run() {
   }
 }
 
-const attachAsset = async (client: github.GitHub, url: string, filename: string) => {
+const attachAsset = async (client, url: string, filename: string) => {
   const contentLength = fs.statSync(filename).size
   await client.repos.uploadReleaseAsset({
     url,
