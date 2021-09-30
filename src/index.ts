@@ -1,6 +1,5 @@
 import * as core from '@actions/core'
 import * as github from '@actions/github'
-import { GitHub } from '@actions/github/lib/utils';
 const mime = require('mime-types')
 const fs = require('fs')
 const path = require('path')
