@@ -20,7 +20,7 @@ async function run() {
 
 const attachAsset = async (client, url: string, filename: string) => {
   const contentLength = fs.statSync(filename).size
-  await client.repos.uploadReleaseAsset({
+  await client.rest.repos.uploadReleaseAsset({
     url,
     file: fs.createReadStream(filename),
     headers: {
