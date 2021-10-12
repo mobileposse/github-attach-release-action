@@ -22,7 +22,7 @@ const attachAsset = async (client, url: string, filename: string) => {
   const contentLength = fs.statSync(filename).size
   await client.rest.repos.uploadReleaseAsset({
     url,
-    file: fs.createReadStream(filename),
+    data: fs.readFileSync(filename),
     headers: {
       'content-type': mime.lookup(filename),
       'content-length': contentLength
