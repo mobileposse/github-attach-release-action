@@ -24,7 +24,7 @@ const attachAsset = async (client, url: string, filename: string) => {
     url,
     data: fs.readFileSync(filename),
     headers: {
-      'content-type': mime.lookup(filename),
+      'content-type': mime.lookup(filename) || 'application/octet-stream',
       'content-length': contentLength
     },
     name: path.basename(filename)
