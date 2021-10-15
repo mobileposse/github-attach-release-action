@@ -1,6 +1,6 @@
 {
   "name": "github-attach-release-action",
-  "version": "1.0.1",
+  "version": "1.0.3",
   "private": true,
   "description": "Attaches a file to an existing Github release",
   "main": "lib/index.js",
